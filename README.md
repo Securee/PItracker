@@ -8,7 +8,7 @@ Chennan Zhang, Shuang Li, Wenrui Diao, and Shanqing Guo. PITracker: Detecting An
 
 python version: 3.7.4
 
- # Add requirement
+Add requirement:numpy  pydot
 pip3 install numpy
 pip3 install pydot
 
