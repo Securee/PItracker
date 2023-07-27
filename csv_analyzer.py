@@ -90,7 +90,7 @@ def analyzeCSVinDir3(analyze_dir, log_file):
                     pi_data = row["data_set"]
                     append_yes = False
                     wrp_intent_implicit = row["wrappingintent_implit(if go to intent)"]
-                    if pi_where != None and pi_flag != "FLAG_IMMUTABLE":
+                    if pi_where != None and ("FLAG_IMMUTABLE" not in pi_flag):
                         if "notification" in pi_where or "Notification" in pi_where or "intent" in pi_goto:
                             if "Notification" in pi_where or "notificaiton" in pi_where:
                                 if (implicit == "True" and base_action == "False" and "v4" not in pi_cons_file) or (
